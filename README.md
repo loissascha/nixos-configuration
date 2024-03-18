@@ -1,2 +1,7 @@
-this goes in the .dotfiles folder in the user folder
-# nixos-configuration
+# NixOS Configuration 
+
+this repo goes in the .dotfiles folder within the user folder
+
+requires home-manager
+
+requires flakes to be activated
