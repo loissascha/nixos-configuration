@@ -1,0 +1,8 @@
+import = ["/home/sascha/.config/alacritty/catppuccin/catppuccin-mocha.yml"]
+
+[window]
+opacity = 0.99
+
+[window.dimensions]
+columns = 100
+lines = 32
