@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+    # TODO needs device set in the per device configuration.nix file
+    
     #Grub Bootloader.
     boot.loader.efi.canTouchEfiVariables = true;
     boot.loader.grub.enable = true;
