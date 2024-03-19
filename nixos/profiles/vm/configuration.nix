@@ -9,4 +9,6 @@
         ../../system/mountsamba.nix
         ../../system/wm/plasma6.nix
     ];
+
+    boot.loader.grub.device = "/dev/vda";
 }

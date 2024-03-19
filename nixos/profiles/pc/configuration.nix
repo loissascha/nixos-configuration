@@ -14,4 +14,6 @@
         #../../system/wm/gnome.nix
         #../../system/wm/hyprland.nix
     ];
+
+    boot.loader.grub.device = "/dev/nvme1n1";
 }
