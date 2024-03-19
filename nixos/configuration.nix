@@ -156,13 +156,14 @@
     tldr
     w3m # terminal web browser
     unzip
-    gnome.zenity
-    p7zip
-    psmisc
+    gnome.zenity # zenity
+    p7zip # 7z
+    psmisc # stuff like killall
+    mc # file manager
 
     # development
     git
-    git-lfs
+    git-lfs # big file storage for git stuff; usage git lfs track
     jetbrains.rider
     jetbrains.phpstorm
     jetbrains.rust-rover
