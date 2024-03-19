@@ -157,8 +157,8 @@
     w3m # terminal web browser
     unzip
     gnome.zenity
-    #_7zz
     p7zip
+    psmisc
 
     # development
     git
