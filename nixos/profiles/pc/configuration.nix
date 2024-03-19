@@ -3,7 +3,8 @@
     imports = 
     [
         ../../configuration.nix
-        ../../system/systemd-bootloader.nix
+        #../../system/systemd-bootloader.nix
+        ../../system/grub-bootloader.nix
         ./hostname.nix
         ./hardware-configuration.nix
         ../../system/amdgpu.nix
