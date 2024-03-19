@@ -20,7 +20,7 @@
     enable = true;
     shellAliases = {
 	    update = "sudo nixos-rebuild switch --flake ~/.dotfiles/nixos#saschapc";
-      update-build = "sudo nixos-rebuild build --flake ~/.dotfiles/nixos#saschapc";
+      update-boot = "sudo nixos-rebuild boot --flake ~/.dotfiles/nixos#saschapc";
 	    home-update = "cd ~/.dotfiles/nixos && home-manager switch --flake .#saschapc";
 	    #distrobox = "~/.local/bin/distrobox";
     };
@@ -30,7 +30,7 @@
     enable = true;
     shellAliases = {
 	    update = "sudo nixos-rebuild switch --flake ~/.dotfiles/nixos#saschapc";
-      update-build = "sudo nixos-rebuild build --flake ~/.dotfiles/nixos#saschapc";
+      update-boot = "sudo nixos-rebuild boot --flake ~/.dotfiles/nixos#saschapc";
 	    home-update = "cd ~/.dotfiles/nixos && home-manager switch --flake .#saschapc";
 	    #distrobox = "~/.local/bin/distrobox";
 	  };
