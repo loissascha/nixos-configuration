@@ -15,5 +15,5 @@
         #../../system/wm/hyprland.nix
     ];
 
-    boot.loader.grub.devices = "nodev";
+    boot.loader.grub.devices = [ "nodev" ];
 }
