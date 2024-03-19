@@ -15,5 +15,5 @@
         #../../system/wm/hyprland.nix
     ];
 
-    boot.loader.grub.device = "/dev/nvme1n1";
+    boot.loader.grub.device = "/dev/nvme1n1p1";
 }
