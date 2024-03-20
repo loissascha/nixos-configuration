@@ -14,6 +14,7 @@
         gtk_engines
         gsettings-desktop-schemas
         gnome.gnome-tweaks
-        xfce.thunar
+        #xfce.thunar
+        pcmanfm
     ];
 }
