@@ -206,6 +206,7 @@
     xorg.xwininfo
     yad
     libstrangle
+    xivlauncher
 
     #work
     teams-for-linux
