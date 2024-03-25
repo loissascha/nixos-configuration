@@ -8,4 +8,12 @@
 		automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s,guest";
 		in ["${automount_opts},uid=1000,gid=1000"];
     };
+
+	fileSystems."/mnt/samba101" = {
+		device = "//192.168.0.50/samba101";
+		fsType = "cifs";
+		options = let
+		automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s,guest";
+		in ["${automount_opts},uid=1000,gid=1000"];
+    };
 }
