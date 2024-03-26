@@ -32,6 +32,7 @@
 	    update = "sudo nixos-rebuild switch --flake ~/.dotfiles/nixos#saschapc";
       update-boot = "sudo nixos-rebuild boot --flake ~/.dotfiles/nixos#saschapc";
 	    home-update = "cd ~/.dotfiles/nixos && home-manager switch --flake .#saschapc";
+      work = "nohup teams-for-linux & disown && nohup slack & disown && nohup flatpak run io.github.mahmoudbahaa.outlook_for_linux & disown";
 	    #distrobox = "~/.local/bin/distrobox";
 	  };
   };
