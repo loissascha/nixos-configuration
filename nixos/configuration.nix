@@ -230,7 +230,9 @@
     
     #others
     gnome.gnome-calculator
-    insync
+    #insync
+    onedrive
+    onedrivegui
     remmina
     obs-studio
     gimp
