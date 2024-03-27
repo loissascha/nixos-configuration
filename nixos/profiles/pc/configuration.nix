@@ -3,6 +3,7 @@
     imports = 
     [
         ../../configuration.nix
+        ../../system/gaming.nix
         ../../system/grub-bootloader.nix
         ./hostname.nix
         ./hardware-configuration.nix

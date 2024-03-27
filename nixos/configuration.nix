@@ -11,11 +11,6 @@
   #boot.kernelPackages = pkgs.linuxPackages_latest; 
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
-  # Gaming Stuff
-  boot.kernel.sysctl = {
-	  "vm.max_map_count" = 16777216;
-	  "fs.file-max" = 524288;
-  };
 
   # AppImage interpreter
   boot.binfmt.registrations.appimage = {
@@ -160,6 +155,7 @@
     p7zip # 7z
     psmisc # stuff like killall
     mc # file manager
+    yad  # something like zenity i think
 
     # development
     git
@@ -187,25 +183,6 @@
     apostrophe
     termius
     teamviewer
-
-    # gaming
-    teamspeak_client
-    wine
-    winetricks
-    gamemode
-    protontricks
-    steam-run
-    steamtinkerlaunch
-    discord
-    lutris
-    mangohud
-    goverlay
-    protonup-qt
-    xdotool
-    xorg.xwininfo
-    yad
-    libstrangle
-    xivlauncher
 
     #work
     teams-for-linux
@@ -256,30 +233,6 @@
 	  };
   };
 
-  
-  programs.gamescope.enable = true;
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-    #gamescopeSession.enable = true;
-
-    package = pkgs.steam.override {
-      extraPkgs = pkgs: with pkgs; [
-        libkrb5
-        keyutils
-      ];
-    };
-    
-  };
-
-  programs.java.enable = true;
-  programs.gamemode.enable = true;
-
-#  programs.steam.package = pkgs.steam.override {
-#     withPrimus = true;
-#     withJava = true;
-#  };
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
