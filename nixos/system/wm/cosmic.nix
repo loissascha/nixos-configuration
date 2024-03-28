@@ -18,10 +18,10 @@
         cosmic-workspaces-epoch
         xdg-desktop-portal-cosmic
         cosmic-greeter
-        cosmic-text
-        libcosmic
+        #cosmic-text
+        #libcosmic
         cosmic-protocols
-        cosmic-time
+        #cosmic-time
         cosmic-edit
         cosmic-screenshot
         cosmic-design-demo
