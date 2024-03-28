@@ -16,5 +16,6 @@
         gnome.gnome-tweaks
         #xfce.thunar
         pcmanfm
+        cosmic-files 
     ];
 }
