@@ -17,5 +17,5 @@
 
     boot.loader.grub.devices = [ "nodev" ];
 
-    programs.coolercontrol.enable = true;
+    #programs.coolercontrol.enable = true;
 }
