@@ -4,7 +4,7 @@
     [
         ../../configuration.nix
         ../../system/gaming.nix
-        ../../system/grub-bootloader.nix
+        ../../system/systemd-bootloader.nix
         ./hostname.nix
         ./hardware-configuration.nix
         ../../system/amdgpu.nix
@@ -15,7 +15,7 @@
         #../../system/wm/hyprland.nix
     ];
 
-    boot.loader.grub.devices = [ "nodev" ];
+    #boot.loader.grub.devices = [ "nodev" ];
 
     #programs.coolercontrol.enable = true;
 }
