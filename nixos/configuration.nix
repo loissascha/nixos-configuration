@@ -156,6 +156,7 @@
     psmisc # stuff like killall
     mc # file manager
     yad  # something like zenity i think
+    lm_sensors
 
     # development
     git
