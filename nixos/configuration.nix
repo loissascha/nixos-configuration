@@ -184,6 +184,7 @@
     apostrophe
     termius
     teamviewer
+    android-tools
 
     #work
     teams-for-linux
