@@ -10,12 +10,12 @@
     ]);
 
     environment.systemPackages = with pkgs; [
-        gtk-engine-murrine
-        gtk_engines
-        gsettings-desktop-schemas
+        #gtk-engine-murrine
+        #gtk_engines
+        #gsettings-desktop-schemas
         gnome.gnome-tweaks
         #xfce.thunar
-        pcmanfm
-        cosmic-files 
+        #pcmanfm
+        #cosmic-files 
     ];
 }
