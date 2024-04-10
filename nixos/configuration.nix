@@ -196,7 +196,6 @@
 
     #settings 
     #xwayland
-    xwaylandvideobridge
     gnome.gnome-software
     nerdfonts
     gtk3
