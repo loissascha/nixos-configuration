@@ -157,7 +157,6 @@
     mc # file manager
     yad  # something like zenity i think
     lm_sensors
-    wgnord
 
     # development
     git
