@@ -200,6 +200,7 @@
     nerdfonts
     gtk3
     gtk4
+    mfcl3770cdwlpr # Brother Printer driver
 
     #browsers
     firefox
