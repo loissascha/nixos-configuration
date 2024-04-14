@@ -195,7 +195,7 @@
     libreoffice
 
     #settings 
-    #xwayland
+    xwayland
     gnome.gnome-software
     nerdfonts
     gtk3
