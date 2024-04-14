@@ -37,7 +37,6 @@
         saschavm = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [
-            ./profiles/vm/configuration.nix
             {
             nix.settings = {
               substituters = [ "https://cosmic.cachix.org/" ];
@@ -45,7 +44,7 @@
             };
             }
             nixos-cosmic.nixosModules.default
-            ./configuration.nix
+            ./profiles/vm/configuration.nix
           ];
         };
       };
