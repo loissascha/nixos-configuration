@@ -33,6 +33,7 @@
         saschalaptop = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [
+            chaotic.nixosModules.default
             ./profiles/laptop/configuration.nix
           ];
         };
@@ -46,6 +47,7 @@
             };
             }
             nixos-cosmic.nixosModules.default
+            chaotic.nixosModules.default
             ./profiles/vm/configuration.nix
           ];
         };

@@ -113,6 +113,7 @@
   };
 
   services.teamviewer.enable = true;
+  chaotic.nordvpn.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -122,7 +123,7 @@
     shell = pkgs.zsh;
     isNormalUser = true;
     description = "sascha";
-    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "audio" "video" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "audio" "video" "libvirtd" "nordvpn" ];
   };
 
   # Allow unfree packages
