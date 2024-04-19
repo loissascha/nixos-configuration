@@ -9,7 +9,9 @@
   nix.settings.auto-optimise-store = true;
 
   #boot.kernelPackages = pkgs.linuxPackages_latest; 
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  #boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages_cachyos;
+
 
 
   # AppImage interpreter
@@ -158,6 +160,7 @@
     yad  # something like zenity i think
     lm_sensors
     sshfs
+    scx # cachyos
 
     # development
     git
