@@ -225,6 +225,7 @@
     virt-manager
     blender-hip
     vial #qmk keyboard stuff helper
+    nordvpn
   ];
 
   environment.shells = with pkgs; [ zsh ];
