@@ -11,7 +11,7 @@
   #boot.kernelPackages = pkgs.linuxPackages_latest; 
   #boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
-
+  #environment.systemPackages =  [ chaotic.scx ];
 
 
   # AppImage interpreter
@@ -160,7 +160,7 @@
     yad  # something like zenity i think
     lm_sensors
     sshfs
-    scx # cachyos
+    scx
 
     # development
     git

@@ -26,6 +26,7 @@
         saschapc = nixpkgs.lib.nixosSystem {
             specialArgs = {inherit inputs;};
             modules = [ 
+              chaotic.nixosModules.default
               ./profiles/pc/configuration.nix
             ];
         };
