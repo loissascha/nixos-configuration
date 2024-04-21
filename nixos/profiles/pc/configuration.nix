@@ -16,6 +16,8 @@
         #../../system/wm/hyprland.nix
     ];
 
+    boot.kernelPackages = pkgs.linuxPackages_cachyos;
+
     #boot.loader.grub.devices = [ "nodev" ];
 
     #programs.coolercontrol.enable = true;
