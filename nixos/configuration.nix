@@ -206,12 +206,6 @@
     gtk3
     gtk4
     mfcl3770cdwlpr # Brother Printer driver
-    (catppuccin-gtk.override {
-    accents = [ "lavender" "teal" ]; # You can specify multiple accents here to output multiple themes
-    size = "compact";
-    tweaks = [ "normal" ]; # You can also specify multiple tweaks here
-    variant = "mocha";
-  })
 
     #browsers
     firefox
