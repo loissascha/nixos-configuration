@@ -19,7 +19,8 @@
       	rust-shell = "nix-shell ~/.dotfiles/nix/shells/rust.nix --run zsh";
 	  	electron-shell = "nix-shell ~/.dotfiles/nix/shells/electron28.nix --run zsh";
 	    shells = "	echo -e 'runRider \t\t-> \t\tdotnet shell + start Rider without console' && 
-					echo  -e 'runRover \t\t-> \t\trust shell + start Rust Rover without console' && 
+					echo -e 'runRover \t\t-> \t\trust shell + start Rust Rover without console' && 
+					echo -e 'runGodot \t\t-> \t\tStart Godot 4.2.2 if available' &&  
 					echo -e 'dotnet-shell \t\t-> \t\tdotnet shell (6, 7, 8)' && 
 					echo -e 'java17-shell \t\t-> \t\tjava17 shell for minecraft' && 
 					echo -e 'java8-shell \t\t-> \t\tjava8 shell for minecraft' && 
