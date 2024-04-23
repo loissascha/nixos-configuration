@@ -8,6 +8,7 @@ let
       work = "nohup teams-for-linux & disown && nohup slack & disown && nohup flatpak run io.github.mahmoudbahaa.outlook_for_linux & disown";
 	    #distrobox = "~/.local/bin/distrobox";
       runGodot = "cd ~/Software/Godot_v4.2.2-stable && nohup steam-run ./Godot_v4.2.2-stable_linux.x86_64 & disown";
+      runGodotMono = "cd ~/Software/Godot_v4.2.2-stable_mono && nohup steam-run ./Godot_v4.2.2-stable_mono_linux.x86_64 & disown"
 	  };
 in
 {
