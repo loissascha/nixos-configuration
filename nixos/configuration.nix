@@ -192,6 +192,7 @@
     teamviewer
     android-tools
     unityhub
+    python311Packages.pip
 
     #work
     teams-for-linux
