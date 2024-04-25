@@ -191,6 +191,7 @@
     termius
     teamviewer
     android-tools
+    unityhub
 
     #work
     teams-for-linux

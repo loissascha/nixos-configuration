@@ -24,7 +24,6 @@ in
   # environment.
   home.packages = [
     pkgs.arduino-ide
-    pkgs.unityhub
   ];
 
 
