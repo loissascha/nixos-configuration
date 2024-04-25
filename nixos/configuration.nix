@@ -162,6 +162,7 @@
     lm_sensors
     sshfs
     scx
+    sniffnet
 
     # development
     git
