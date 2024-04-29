@@ -21,4 +21,8 @@
     #boot.loader.grub.devices = [ "nodev" ];
 
     #programs.coolercontrol.enable = true;
+
+    environment.sessionVariables = rec {
+        PATH = [ "/home/sascha/.dotnet/tools" ];
+    };
 }

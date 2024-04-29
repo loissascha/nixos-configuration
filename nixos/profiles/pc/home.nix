@@ -41,4 +41,8 @@ in
     #This is Nix created file
   #  confirm_os_window_close 0
   #'';
+
+  #home.sessionVariables = {
+  #  PATH = "${config.home.sessionVariables.PATH}:/home/sascha/.dotnet/tools";
+  #};
 }
