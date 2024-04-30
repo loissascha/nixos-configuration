@@ -11,6 +11,7 @@
         # gaming
         teamspeak_client
         wine
+        wine64
         winetricks
         gamemode
         protontricks
