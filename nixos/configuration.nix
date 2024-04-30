@@ -163,7 +163,7 @@
     sshfs
     scx
     sniffnet
-    jq
+    jq # required for dzgui
 
     # development
     git
