@@ -163,6 +163,7 @@
     sshfs
     scx
     sniffnet
+    jq
 
     # development
     git
