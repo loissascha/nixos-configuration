@@ -148,6 +148,7 @@
     wl-clipboard
     wl-clipboard-x11
     btop
+    nvtopPackages.amd
     zellij
     du-dust # du command but better
     oh-my-zsh
