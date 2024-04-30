@@ -18,6 +18,7 @@
 		java8-shell = "nix-shell ~/.dotfiles/nix/shells/java8.nix --run zsh";
       	rust-shell = "nix-shell ~/.dotfiles/nix/shells/rust.nix --run zsh";
 	  	electron-shell = "nix-shell ~/.dotfiles/nix/shells/electron28.nix --run zsh";
+		python-shell = "nix-shell ~/.dotfiles/nix/shells/python.nix --run zsh";
 	    shells = "	echo -e 'runRider \t\t-> \t\tdotnet shell + start Rider without console' && 
 					echo -e 'runRover \t\t-> \t\trust shell + start Rust Rover without console' && 
 					echo -e 'runGodot \t\t-> \t\tStart Godot 4.2.2 if available' &&  
@@ -26,7 +27,8 @@
 					echo -e 'java17-shell \t\t-> \t\tjava17 shell for minecraft' && 
 					echo -e 'java8-shell \t\t-> \t\tjava8 shell for minecraft' && 
 					echo -e 'rust-shell \t\t-> \t\trust development shell' && 
-					echo -e 'electron-shell \t\t-> \t\telectron 28 development shell'";
+					echo -e 'electron-shell \t\t-> \t\telectron 28 development shell' && 
+					echo -e 'python-shell \t\t-> \t\tpython3 development shell'";
 	  };
     initExtra = "
 	fastfetch
