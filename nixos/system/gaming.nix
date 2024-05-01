@@ -2,7 +2,7 @@
 
 {
     # Gaming Stuff
-    boot.kernel.sysctl = {
+    boot.kernel.sysctl = pkgs.lib.mkForce {
         "vm.max_map_count" = 16777216;
         "fs.file-max" = 524288;
     };
