@@ -26,4 +26,7 @@
     environment.sessionVariables = rec {
         PATH = [ "/home/sascha/.dotnet/tools" ];
     };
+
+    programs.dzgui.enable = true;
+
 }

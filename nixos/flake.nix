@@ -14,6 +14,11 @@
       url = "github:lilyinstarlight/nixos-cosmic";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    dzgui-nix = {
+        url = "github:lelgenio/dzgui-nix";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, nixos-cosmic, chaotic, ... }@inputs:
@@ -27,6 +32,7 @@
             specialArgs = {inherit inputs;};
             modules = [ 
               chaotic.nixosModules.default
+              inputs.dzgui-nix.nixosModules.default 
               ./profiles/pc/configuration.nix
             ];
         };
