@@ -163,8 +163,8 @@
     lm_sensors
     sshfs
     scx
-    sniffnet
-    jq # required for dzgui
+    #sniffnet
+    #jq # required for dzgui
 
     # development
     git
@@ -233,6 +233,8 @@
     vial #qmk keyboard stuff helper
     nordvpn
   ];
+
+  chaotic.nordvpn.enable = true;
 
   environment.shells = with pkgs; [ zsh ];
 
