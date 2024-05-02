@@ -17,7 +17,7 @@
         protontricks
         steam-run
         steamtinkerlaunch
-        discord
+        discord-krisp
         lutris
         mangohud
         goverlay
