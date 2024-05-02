@@ -12,9 +12,9 @@
         ../../system/amdgpu.nix
         ../../system/mountsamba.nix
         #../../system/wm/plasma5.nix
-        #../../system/wm/plasma6.nix
-        ../../system/wm/gnome.nix
-        #../../system/wm/hyprland.nix
+        ../../system/wm/plasma6.nix
+        #../../system/wm/gnome.nix
+        ../../system/wm/hyprland.nix
     ];
 
     boot.kernelPackages = pkgs.linuxPackages_cachyos;
