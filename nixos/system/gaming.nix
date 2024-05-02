@@ -22,6 +22,7 @@
         mangohud
         goverlay
         #protonup-qt
+        protonup-ng
         xdotool
         xorg.xwininfo
         libstrangle
