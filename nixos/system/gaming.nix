@@ -21,7 +21,7 @@
         lutris
         mangohud
         goverlay
-        #protonup-qt
+        protonup-qt
         protonup-ng
         xdotool
         xorg.xwininfo
