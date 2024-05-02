@@ -16,4 +16,8 @@
     boot.kernelPackages = pkgs.linuxPackages_zen; 
 
     boot.loader.grub.device = "/dev/vda";
+
+    environment.systemPackages = with pkgs; [
+        protonup-qt
+    ];
 }
