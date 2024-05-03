@@ -232,6 +232,7 @@
     blender-hip
     vial #qmk keyboard stuff helper
     nordvpn
+    xdelta #spt
   ];
 
   environment.shells = with pkgs; [ zsh ];
