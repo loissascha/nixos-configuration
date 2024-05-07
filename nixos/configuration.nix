@@ -234,6 +234,8 @@
     vial #qmk keyboard stuff helper
     nordvpn
     xdelta #spt
+    orca-slicer
+    bambu-studio
   ];
 
   environment.shells = with pkgs; [ zsh ];
