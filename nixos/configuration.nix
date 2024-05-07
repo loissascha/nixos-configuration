@@ -195,6 +195,7 @@
     android-tools
     unityhub
     python311Packages.pip
+    mariadb_110
 
     #work
     teams-for-linux
