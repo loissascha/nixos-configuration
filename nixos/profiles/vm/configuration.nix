@@ -7,11 +7,11 @@
         ./hostname.nix
         ./hardware-configuration.nix
         ../../system/mountsamba.nix
-        #../../system/wm/plasma6.nix
+        ../../system/wm/plasma6.nix
     ];
 
-    services.desktopManager.cosmic.enable = true;
-    services.displayManager.cosmic-greeter.enable = true;
+    #services.desktopManager.cosmic.enable = true;
+    #services.displayManager.cosmic-greeter.enable = true;
 
     boot.kernelPackages = pkgs.linuxPackages_zen; 
 
