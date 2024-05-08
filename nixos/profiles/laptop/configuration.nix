@@ -7,6 +7,7 @@
         ./hostname.nix
         ./hardware-configuration.nix
         ../../system/mountsamba.nix
+        ../../system/dm/gdm.nix
         ../../system/wm/gnome.nix
     ];
 

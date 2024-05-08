@@ -7,6 +7,7 @@
         ./hostname.nix
         ./hardware-configuration.nix
         ../../system/mountsamba.nix
+        ../../system/dm/sddm.nix
         ../../system/wm/plasma6.nix
     ];
 
