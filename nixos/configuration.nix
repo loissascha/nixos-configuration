@@ -2,14 +2,16 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, chaotic, ... }:
 
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.auto-optimise-store = true;
 
   #boot.kernelPackages = pkgs.linuxPackages_latest; 
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  #boot.kernelPackages = pkgs.linuxPackages_zen;
+  #boot.kernelPackages = pkgs.linuxPackages_cachyos;
+  #environment.systemPackages =  [ chaotic.scx ];
 
 
   # AppImage interpreter
@@ -111,6 +113,7 @@
   };
 
   services.teamviewer.enable = true;
+  chaotic.nordvpn.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -120,7 +123,7 @@
     shell = pkgs.zsh;
     isNormalUser = true;
     description = "sascha";
-    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "audio" "video" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "audio" "video" "libvirtd" "nordvpn" ];
   };
 
   # Allow unfree packages
@@ -145,6 +148,7 @@
     wl-clipboard
     wl-clipboard-x11
     btop
+    nvtopPackages.amd
     zellij
     du-dust # du command but better
     oh-my-zsh
@@ -157,6 +161,10 @@
     mc # file manager
     yad  # something like zenity i think
     lm_sensors
+    sshfs
+    scx
+    #sniffnet
+    #jq # required for dzgui
 
     # development
     git
@@ -185,6 +193,9 @@
     termius
     teamviewer
     android-tools
+    unityhub
+    python311Packages.pip
+    mariadb_110
 
     #work
     teams-for-linux
@@ -195,11 +206,12 @@
     libreoffice
 
     #settings 
-    #xwayland
+    xwayland
     gnome.gnome-software
     nerdfonts
     gtk3
     gtk4
+    mfcl3770cdwlpr # Brother Printer driver
 
     #browsers
     firefox
@@ -220,6 +232,10 @@
     virt-manager
     blender-hip
     vial #qmk keyboard stuff helper
+    nordvpn
+    xdelta #spt
+    orca-slicer
+    bambu-studio
   ];
 
   environment.shells = with pkgs; [ zsh ];

@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
     imports = 
     [
@@ -9,4 +9,6 @@
         ../../system/mountsamba.nix
         ../../system/wm/gnome.nix
     ];
+
+    boot.kernelPackages = pkgs.linuxPackages_latest; 
 }

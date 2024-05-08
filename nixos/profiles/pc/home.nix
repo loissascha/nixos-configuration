@@ -7,6 +7,8 @@ let
 	    home-update = "cd ~/.dotfiles/nixos && home-manager switch --flake .#saschapc";
       work = "nohup teams-for-linux & disown && nohup slack & disown && nohup flatpak run io.github.mahmoudbahaa.outlook_for_linux & disown";
 	    #distrobox = "~/.local/bin/distrobox";
+      runGodot = "cd ~/Software/Godot_v4.2.2-stable && nohup steam-run ./Godot_v4.2.2-stable_linux.x86_64 & disown";
+      runGodotMono = "cd ~/Software/Godot_v4.2.2-stable_mono && nohup steam-run ./Godot_v4.2.2-stable_mono_linux.x86_64 & disown";
 	  };
 in
 {
@@ -39,4 +41,8 @@ in
     #This is Nix created file
   #  confirm_os_window_close 0
   #'';
+
+  #home.sessionVariables = {
+  #  PATH = "${config.home.sessionVariables.PATH}:/home/sascha/.dotnet/tools";
+  #};
 }

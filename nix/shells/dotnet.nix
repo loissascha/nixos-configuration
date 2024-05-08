@@ -13,5 +13,6 @@ mkShell {
   shellHook = ''
     export ConnectionStrings__PiANetConnection="server=localhost;port=30306;database=pianet;user=root;password=root";
     export CRONJOB_SERVER=0;
+    export PATH=$PATH:/home/sascha/.dotnet/tools;
   '';
 }

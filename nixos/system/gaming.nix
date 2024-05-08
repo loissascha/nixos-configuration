@@ -2,7 +2,7 @@
 
 {
     # Gaming Stuff
-    boot.kernel.sysctl = {
+    boot.kernel.sysctl = pkgs.lib.mkForce {
         "vm.max_map_count" = 16777216;
         "fs.file-max" = 524288;
     };
@@ -11,16 +11,18 @@
         # gaming
         teamspeak_client
         wine
+        wine64
         winetricks
         gamemode
         protontricks
         steam-run
         steamtinkerlaunch
-        discord
+        discord-krisp
         lutris
         mangohud
         goverlay
         protonup-qt
+        protonup-ng
         xdotool
         xorg.xwininfo
         libstrangle
