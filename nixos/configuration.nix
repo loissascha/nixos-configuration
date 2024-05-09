@@ -196,6 +196,7 @@
     unityhub
     python311Packages.pip
     mariadb_110
+    flatpak-builder
 
     #work
     teams-for-linux
