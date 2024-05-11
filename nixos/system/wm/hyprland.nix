@@ -15,6 +15,7 @@
         fuzzel
         dunst
         playerctl
+        swww
         #gvfs # needed for thunar 
         #xdg-desktop-portal-gtk
         pcmanfm
