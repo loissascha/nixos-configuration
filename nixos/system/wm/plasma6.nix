@@ -5,6 +5,9 @@
 
     environment.systemPackages = with pkgs; [
         blurredwallpaper
-        xdg-desktop-portal-gtk
+        #xdg-desktop-portal-gtk
+        gtk3
+        gtk4
+        cantarell-fonts
     ];
 }
