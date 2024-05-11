@@ -7,7 +7,7 @@
     };
 
     environment.systemPackages = with pkgs; [
-        lxappearance
+        #lxappearance
         #xfce.thunar
         #waybar
         lxde.lxsession
@@ -16,6 +16,7 @@
         dunst
         playerctl
         swww
+        nwg-look
         #gvfs # needed for thunar 
         #xdg-desktop-portal-gtk
         pcmanfm
