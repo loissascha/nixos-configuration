@@ -5,5 +5,6 @@
 
     environment.systemPackages = with pkgs; [
         blurredwallpaper
+        xdg-desktop-portal-gtk
     ];
 }
