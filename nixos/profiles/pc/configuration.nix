@@ -4,7 +4,7 @@
     [
         ../../configuration.nix
         ../../system/gaming.nix
-        ../../system/xwaylandvideobridge.nix
+        #../../system/xwaylandvideobridge.nix
         #../../system/systemd-bootloader.nix
         ../../system/grub-bootloader.nix
         ./hostname.nix
