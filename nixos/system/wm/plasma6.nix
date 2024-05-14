@@ -5,6 +5,5 @@
 
     environment.systemPackages = with pkgs; [
         blurredwallpaper
-        cantarell-fonts
     ];
 }

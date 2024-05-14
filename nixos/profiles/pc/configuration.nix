@@ -19,8 +19,8 @@
         ../../system/wm/hyprland.nix
     ];
 
-    boot.kernelPackages = pkgs.linuxPackages_cachyos;
-    #boot.kernelPackages = pkgs.linuxPackages_zen; 
+    #boot.kernelPackages = pkgs.linuxPackages_cachyos;
+    boot.kernelPackages = pkgs.linuxPackages_zen; 
 
     boot.loader.grub.devices = [ "nodev" ];
 
