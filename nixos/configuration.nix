@@ -175,6 +175,7 @@
     jetbrains-toolbox
     filezilla
     php
+    php82Packages.composer
     symfony-cli
     nodejs
     ccls
