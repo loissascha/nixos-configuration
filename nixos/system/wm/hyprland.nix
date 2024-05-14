@@ -20,5 +20,6 @@
         #gvfs # needed for thunar 
         #xdg-desktop-portal-gtk
         pcmanfm
+        wlogout
     ];
 }

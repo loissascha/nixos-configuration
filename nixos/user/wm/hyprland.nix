@@ -13,7 +13,7 @@
 
                 modules-left = [ "cpu" "memory" "pulseaudio" ];
                 modules-center = [ "hyprland/workspaces" ];
-                modules-right = [ "tray" "clock" ];
+                modules-right = [ "tray" "clock" "custom/wlogout" ];
 
                 "hyprland/workspaces" = {
                     "format" = "{icon}";
@@ -49,6 +49,11 @@
                     #    "8" = ["eDP-1" "DP-1" "HDMI-A-1"];
                     #    "9" = ["eDP-1" "DP-1" "HDMI-A-1"];
                     #};
+                };
+
+                "custom/wlogout" = { 
+                    "format" = "  ";
+                    "on-click" = "wlogout -c 5 -r 5 -p layer-shell";
                 };
 
                 tray = {
