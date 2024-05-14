@@ -7,6 +7,7 @@
         ../../system/xwaylandvideobridge.nix
         #../../system/systemd-bootloader.nix
         ../../system/grub-bootloader.nix
+        ../../system/etc/x11RefreshRate.nix
         ./hostname.nix
         ./hardware-configuration.nix
         ../../system/amdgpu.nix
