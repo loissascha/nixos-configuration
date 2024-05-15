@@ -169,7 +169,7 @@ exec-once = swww-daemon
 # Set programs that you use
 $terminal = kitty
 $fileManager = pcmanfm
-$menu = fuzzel -w 50 -l 40 -b 1e1e2ee6 -s 000000e6 -r 15 -m f38ba8e6 -C f38ba8e6 -B 3 
+$menu = fuzzel -w 50 -l 40 -b 1e1e2ee6 -s 000000e6 -r 15 -m b4befee6 -C b4befee6 -B 3 
 
 # Some default env vars.
 env = XCURSOR_SIZE,24
@@ -200,8 +200,8 @@ general {
     gaps_in = 0
     gaps_out = 0
     border_size = 2
-    col.active_border = rgba(f38ba8e6) rgba(f38ba8e6) 45deg
-    col.inactive_border = rgba(595959e6)
+    col.active_border = rgba(b4befee6) rgba(b4befee6) 45deg
+    col.inactive_border = rgb(11111b)
 
     layout = dwindle
 
