@@ -96,8 +96,37 @@
                 background-color: black;
             }
 
+            #cpu {
+                color: #b4befe;
+            }
+
+            #memory {
+                color: #b4befe;
+            }
+
+            #pulseaudio {
+                color: #b4befe;
+            }
+
+            #tray {
+                color: #b4befe;
+            }
+
+            #clock {
+                color: #b4befe;
+            }
+
+            #wlogout {
+                color: #b4befe;
+            }
+
+            #workspaces button {
+                color: #b4befe;
+            }
+
             #workspaces button.active {
-                color: #f38ba8;
+                color: #000000;
+                background: #b4befe;
             }
 
             #cpu, #memory, #tray, #clock {
@@ -197,8 +226,8 @@ input {
 general {
     # See https://wiki.hyprland.org/Configuring/Variables/ for more
 
-    gaps_in = 0
-    gaps_out = 0
+    gaps_in = 5
+    gaps_out = 5
     border_size = 2
     col.active_border = rgba(b4befee6) rgba(b4befee6) 45deg
     col.inactive_border = rgb(11111b)
