@@ -149,10 +149,10 @@
                 margin-left:1px;
             }
 
-
             #clock {
                 color: #000000;
                 background: #cba6f7;
+                font-weight:bold;
             }
 
             #custom-wlogout {
@@ -161,6 +161,7 @@
                 padding-left: 10px;
                 padding-right: 14px;
                 border-radius:8px;
+                font-weight:bold;
             }
 
             #custom-swaync {
