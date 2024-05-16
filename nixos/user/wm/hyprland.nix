@@ -137,9 +137,18 @@
             }
 
             #tray {
-                color: #000000;
                 background:#313244;
             }
+
+            #taskbar button {
+                background:#313244;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius:8px;
+                margin-right:1px;
+                margin-left:1px;
+            }
+
 
             #clock {
                 color: #000000;
