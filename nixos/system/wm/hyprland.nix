@@ -13,7 +13,8 @@
         lxde.lxsession
         pavucontrol
         fuzzel
-        dunst
+        #dunst
+        swaynotificationcenter
         playerctl
         swww
         nwg-look
