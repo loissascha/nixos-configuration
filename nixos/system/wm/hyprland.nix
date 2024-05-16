@@ -22,5 +22,8 @@
         #xdg-desktop-portal-gtk
         pcmanfm
         wlogout
+        slurp
+        grim
+        wl-clipboard
     ];
 }
