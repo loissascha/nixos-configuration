@@ -52,8 +52,9 @@
                 };
 
                 "custom/wlogout" = { 
-                    "format" = "  ";
+                    "format" = "";
                     "on-click" = "wlogout -c 5 -r 5 -p layer-shell";
+                    #"class" = "wlogout";
                 };
 
                 tray = {
@@ -93,31 +94,40 @@
         };
         style = ''
             window#waybar {
-                background-color: black;
+                background-color: #1e1e2e;
             }
 
             #cpu {
-                color: #b4befe;
+                background:#eba0ac;
+                color: #000000;
             }
 
             #memory {
-                color: #b4befe;
+                color: #000000;
+                background: #cba6f7;
             }
 
             #pulseaudio {
-                color: #b4befe;
+                color: #000000;
+                background:#f9e2af;
             }
 
             #tray {
-                color: #b4befe;
+                color: #000000;
+                background:#fab387;
             }
 
             #clock {
-                color: #b4befe;
+                color: #000000;
+                background: #a6e3a1;
             }
 
-            #wlogout {
-                color: #b4befe;
+            #custom-wlogout {
+                color: #000000;
+                background: #f38ba8;
+                padding-left: 10px;
+                padding-right: 14px;
+                border-radius:8px;
             }
 
             #workspaces button {
@@ -129,8 +139,9 @@
                 background: #b4befe;
             }
 
-            #cpu, #memory, #tray, #clock {
+            #cpu, #memory, #tray, #clock, #pulseaudio {
                 padding: 0 10px;
+                border-radius:8px;
             }
         '';
     };
