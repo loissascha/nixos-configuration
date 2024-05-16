@@ -13,7 +13,7 @@
 
                 modules-left = [ "cpu" "memory" "pulseaudio" "hyprland/window" ];
                 modules-center = [ "hyprland/workspaces" ];
-                modules-right = [ "tray" "clock" "custom/wlogout" ];
+                modules-right = [ "tray" "custom/swaync" "clock" "custom/wlogout" ];
 
                 "hyprland/workspaces" = {
                     "format" = "{icon}";
@@ -57,16 +57,21 @@
                     #"class" = "wlogout";
                 };
 
+                "custom/swaync" = {
+                    "format" = "";
+                    "on-click" = "sleep 0.1 && swaync-client -op";
+                };
+
                 tray = {
                     #"icon-size" = 21;
-                    "spacing" = 10;
+                    "spacing" = 8;
                 };
                 clock = {
                     "interval" = 1;
-                    "format" = "{:%a %Y-%m-%d %H:%M %p}";
+                    "format" = "{:%H:%M %p}";
                     "timezone" = "Europe/Berlin";
                     "tooltip-format" = ''
-                        <big>{:%Y %B}</big>
+                        <big>{:%a %Y %B %d}</big>
                         <tt><small>{calendar}</small></tt>'';
                 };
                 cpu = { "format" = "{usage}% "; };
@@ -114,17 +119,25 @@
 
             #tray {
                 color: #000000;
-                background:#fab387;
+                background:#313244;
             }
 
             #clock {
                 color: #000000;
-                background: #a6e3a1;
+                background: #cba6f7;
             }
 
             #custom-wlogout {
                 color: #000000;
                 background: #f38ba8;
+                padding-left: 10px;
+                padding-right: 14px;
+                border-radius:8px;
+            }
+
+            #custom-swaync {
+                color: #000000;
+                background: #f9e2af;
                 padding-left: 10px;
                 padding-right: 14px;
                 border-radius:8px;
