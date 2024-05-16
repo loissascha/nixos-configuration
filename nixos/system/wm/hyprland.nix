@@ -25,5 +25,6 @@
         slurp
         grim
         wl-clipboard
+        swappy
     ];
 }
