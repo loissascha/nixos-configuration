@@ -11,7 +11,7 @@
                 margin = "0";
                 spacing = 2;
 
-                modules-left = [ "cpu" "memory" "pulseaudio" "hyprland/window" ];
+                modules-left = [ "cpu" "memory" "pulseaudio" "wlr/taskbar" "hyprland/window" ];
                 modules-center = [ "hyprland/workspaces" ];
                 modules-right = [ "tray" "custom/swaync" "clock" "custom/wlogout" ];
 
@@ -49,6 +49,25 @@
                     #    "8" = ["eDP-1" "DP-1" "HDMI-A-1"];
                     #    "9" = ["eDP-1" "DP-1" "HDMI-A-1"];
                     #};
+                };
+
+                "wlr/taskbar" = {
+                    "format" = "{icon}";
+                    "icon-size" = 14;
+                    #"icon-theme" = "ePapirus-Dark";
+                    #"tooltip-format" = "{title}";
+                    "on-click" = "activate";
+                    "on-click-middle" = "close";
+                    #"ignore-list" = [
+                    #    "Alacritty"
+                    #];
+                    #"app_ids-mapping" = {
+                    #    "firefoxdeveloperedition": "firefox-developer-edition"
+                    #};
+                    #"rewrite": {
+                    #    "Firefox Web Browser": "Firefox",
+                    #    "Foot Server": "Terminal"
+                    #}
                 };
 
                 "custom/wlogout" = { 
