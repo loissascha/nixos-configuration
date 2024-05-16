@@ -11,7 +11,7 @@
                 margin = "0";
                 spacing = 2;
 
-                modules-left = [ "cpu" "memory" "pulseaudio" ];
+                modules-left = [ "cpu" "memory" "pulseaudio" "hyprland/window" ];
                 modules-center = [ "hyprland/workspaces" ];
                 modules-right = [ "tray" "clock" "custom/wlogout" ];
 
@@ -130,6 +130,11 @@
                 border-radius:8px;
             }
 
+            #window {
+                color: #cdd6f4;
+                background: #313244;
+            }
+
             #workspaces button {
                 color: #b4befe;
             }
@@ -139,7 +144,7 @@
                 background: #b4befe;
             }
 
-            #cpu, #memory, #tray, #clock, #pulseaudio {
+            #cpu, #memory, #tray, #clock, #pulseaudio, #window {
                 padding: 0 10px;
                 border-radius:8px;
             }
