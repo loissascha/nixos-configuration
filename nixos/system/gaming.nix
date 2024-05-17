@@ -27,7 +27,7 @@
         xorg.xwininfo
         libstrangle
         xivlauncher
-        inputs.nix-citizen.packages.${system}.star-citizen
+        #inputs.nix-citizen.packages.${system}.star-citizen
     ];
 
     programs.gamescope.enable = true;
