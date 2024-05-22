@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
     # Gaming Stuff
@@ -27,9 +27,11 @@
         xorg.xwininfo
         libstrangle
         xivlauncher
+        gamescope_git
+        #inputs.nix-citizen.packages.${system}.star-citizen
     ];
 
-    programs.gamescope.enable = true;
+    #programs.gamescope.enable = true;
     programs.steam = {
         enable = true;
         remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play

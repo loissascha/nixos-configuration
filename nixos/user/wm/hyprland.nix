@@ -11,9 +11,9 @@
                 margin = "0";
                 spacing = 2;
 
-                modules-left = [ "cpu" "memory" "pulseaudio" ];
+                modules-left = [ "cpu" "memory" "pulseaudio" "wlr/taskbar" "hyprland/window" ];
                 modules-center = [ "hyprland/workspaces" ];
-                modules-right = [ "tray" "clock" ];
+                modules-right = [ "tray" "custom/swaync" "clock" "custom/wlogout" ];
 
                 "hyprland/workspaces" = {
                     "format" = "{icon}";
@@ -51,16 +51,46 @@
                     #};
                 };
 
+                "wlr/taskbar" = {
+                    "format" = "{icon}";
+                    "icon-size" = 14;
+                    #"icon-theme" = "ePapirus-Dark";
+                    #"tooltip-format" = "{title}";
+                    "on-click" = "activate";
+                    "on-click-middle" = "close";
+                    #"ignore-list" = [
+                    #    "Alacritty"
+                    #];
+                    #"app_ids-mapping" = {
+                    #    "firefoxdeveloperedition": "firefox-developer-edition"
+                    #};
+                    #"rewrite": {
+                    #    "Firefox Web Browser": "Firefox",
+                    #    "Foot Server": "Terminal"
+                    #}
+                };
+
+                "custom/wlogout" = { 
+                    "format" = "";
+                    "on-click" = "wlogout -c 5 -r 5 -p layer-shell";
+                    #"class" = "wlogout";
+                };
+
+                "custom/swaync" = {
+                    "format" = "";
+                    "on-click" = "sleep 0.1 && swaync-client -op";
+                };
+
                 tray = {
                     #"icon-size" = 21;
-                    "spacing" = 10;
+                    "spacing" = 8;
                 };
                 clock = {
                     "interval" = 1;
-                    "format" = "{:%a %Y-%m-%d %H:%M %p}";
+                    "format" = "{:%H:%M %p}";
                     "timezone" = "Europe/Berlin";
                     "tooltip-format" = ''
-                        <big>{:%Y %B}</big>
+                        <big>{:%a %Y %B %d}</big>
                         <tt><small>{calendar}</small></tt>'';
                 };
                 cpu = { "format" = "{usage}% "; };
@@ -88,16 +118,80 @@
         };
         style = ''
             window#waybar {
-                background-color: black;
+                background-color: #1e1e2e;
+            }
+
+            #cpu {
+                background:#eba0ac;
+                color: #000000;
+            }
+
+            #memory {
+                color: #000000;
+                background: #cba6f7;
+            }
+
+            #pulseaudio {
+                color: #000000;
+                background:#f9e2af;
+            }
+
+            #tray {
+                background:#313244;
+            }
+
+            #taskbar button {
+                background:#313244;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius:8px;
+                margin-right:1px;
+                margin-left:1px;
+            }
+
+            #clock {
+                color: #000000;
+                background: #cba6f7;
+                font-weight:bold;
+            }
+
+            #custom-wlogout {
+                color: #000000;
+                background: #f38ba8;
+                padding-left: 10px;
+                padding-right: 14px;
+                border-radius:8px;
+                font-weight:bold;
+            }
+
+            #custom-swaync {
+                color: #000000;
+                background: #f9e2af;
+                padding-left: 10px;
+                padding-right: 14px;
+                border-radius:8px;
+            }
+
+            #window {
+                color: #cdd6f4;
+                background: #313244;
+            }
+
+            #workspaces button {
+                color: #b4befe;
             }
 
             #workspaces button.active {
-                color: #f38ba8;
+                color: #000000;
+                background: #b4befe;
             }
 
-            #cpu, #memory, #tray, #clock {
+            #cpu, #memory, #tray, #clock, #pulseaudio, #window {
                 padding: 0 10px;
+                border-radius:8px;
             }
         '';
     };
+
+    home.file.".config/hypr/hyprland.conf".source = ../../.config/hypr/hyprland.conf;
 }

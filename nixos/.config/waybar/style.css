@@ -1,0 +1,73 @@
+window#waybar {
+    background-color: #1e1e2e;
+}
+
+#cpu {
+    background:#eba0ac;
+    color: #000000;
+}
+
+#memory {
+    color: #000000;
+    background: #cba6f7;
+}
+
+#pulseaudio {
+    color: #000000;
+    background:#f9e2af;
+}
+
+#tray {
+    background:#313244;
+}
+
+#taskbar button {
+    background:#313244;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius:8px;
+    margin-right:1px;
+    margin-left:1px;
+}
+
+#clock {
+    color: #000000;
+    background: #cba6f7;
+    font-weight:bold;
+}
+
+#custom-wlogout {
+    color: #000000;
+    background: #f38ba8;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+#custom-swaync {
+    color: #000000;
+    background: #f9e2af;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius:8px;
+}
+
+#window {
+    color: #cdd6f4;
+    background: #313244;
+}
+
+#workspaces button {
+    color: #b4befe;
+}
+
+#workspaces button.active {
+    color: #000000;
+    background: #b4befe;
+}
+
+#cpu, #memory, #tray, #clock, #pulseaudio, #window {
+    padding: 0 10px;
+    border-radius:8px;
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "clock": {
+      "format": "{:%H:%M}",
+      "interval": 1,
+      "timezone": "Europe/Berlin",
+      "tooltip-format": "<big>{:%a %Y %B %d}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+      "format": "{usage}% "
+    },
+    "custom/swaync": {
+      "format": "",
+      "on-click": "sleep 0.1 && swaync-client -op"
+    },
+    "custom/wlogout": {
+      "format": "",
+      "on-click": "wlogout -c 5 -r 5 -p layer-shell"
+    },
+    "height": 35,
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "󱚌 (1)",
+        "2": "󰖟 (2)",
+        "3": " (3)",
+        "4": "󰎄 (4)",
+        "5": "󰋩 (5)",
+        "6": " (6)",
+        "7": "󰄖 (7)",
+        "8": "󰑴 (8)",
+        "9": "󱎓 (9)"
+      },
+      "on-click": "activate",
+      "on-scroll-down": "hyprctl dispatch workspace e+1",
+      "on-scroll-up": "hyprctl dispatch workspace e-1"
+    },
+    "layer": "top",
+    "margin": "0",
+    "memory": {
+      "format": "{}% "
+    },
+    "modules-center": [
+      "hyprland/workspaces"
+    ],
+    "modules-left": [
+      "cpu",
+      "memory",
+      "pulseaudio",
+      "wlr/taskbar",
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "tray",
+      "custom/swaync",
+      "clock",
+      "custom/wlogout"
+    ],
+    "position": "top",
+    "pulseaudio": {
+      "format": "{volume}% {icon}  {format_source}",
+      "format-bluetooth": "{volume}% {icon}  {format_source}",
+      "format-bluetooth-muted": "󰸈 {icon}  {format_source}",
+      "format-icons": {
+        "car": "",
+        "default": [
+          "",
+          "",
+          ""
+        ],
+        "hands-free": "",
+        "headphone": "",
+        "headset": "",
+        "phone": "",
+        "portable": ""
+      },
+      "format-muted": "󰸈 {format_source}",
+      "format-source": "{volume}% ",
+      "format-source-muted": " ",
+      "on-click": "pavucontrol",
+      "scroll-step": 1
+    },
+    "spacing": 2,
+    "tray": {
+      "spacing": 8
+    },
+    "wlr/taskbar": {
+      "format": "{icon}",
+      "icon-size": 14,
+      "on-click": "activate",
+      "on-click-middle": "close"
+    }
+  }
+]

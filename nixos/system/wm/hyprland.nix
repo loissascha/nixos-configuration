@@ -1,23 +1,30 @@
 { config, pkgs, ... }:
 
 {
-    services.displayManager.sddm.enable = true;
     programs.hyprland = {
         enable = true;
         xwayland.enable = true;
     };
 
     environment.systemPackages = with pkgs; [
-        lxappearance
+        #lxappearance
         #xfce.thunar
         #waybar
         lxde.lxsession
         pavucontrol
         fuzzel
-        dunst
+        #dunst
+        swaynotificationcenter
         playerctl
+        swww
+        nwg-look
         #gvfs # needed for thunar 
         #xdg-desktop-portal-gtk
         pcmanfm
+        wlogout
+        slurp
+        grim
+        wl-clipboard
+        swappy
     ];
 }

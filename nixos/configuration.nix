@@ -175,6 +175,7 @@
     jetbrains-toolbox
     filezilla
     php
+    php82Packages.composer
     symfony-cli
     nodejs
     ccls
@@ -196,6 +197,7 @@
     unityhub
     python311Packages.pip
     mariadb_110
+    flatpak-builder
 
     #work
     teams-for-linux
