@@ -189,7 +189,7 @@
     dotnet-sdk_8
     vscode
     bruno
-    dbeaver
+    dbeaver-bin
     apostrophe
     termius
     teamviewer
