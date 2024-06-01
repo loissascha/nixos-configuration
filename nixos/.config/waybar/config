@@ -1,6 +1,10 @@
 [
   {
-	  "height": 35,
+    "position": "top",
+    "layer": "top",
+    "margin": "0",
+    "height": 25,
+    "spacing": 2,
     "modules-center": [
       "sway/workspaces"
     ],
@@ -34,7 +38,6 @@
       "format": "",
       "on-click": "wlogout -c 5 -r 5 -p layer-shell"
     },
-    
     "hyprland/workspaces": {
       "format": "{icon}",
       "format-icons": {
@@ -73,12 +76,9 @@
       "on-scroll-down": "hyprctl dispatch workspace e+1",
       "on-scroll-up": "hyprctl dispatch workspace e-1"
     },
-    "layer": "top",
-    "margin": "0",
     "memory": {
       "format": "{}% "
     },
-        "position": "top",
     "pulseaudio": {
       "format": "{volume}% {icon}  {format_source}",
       "format-bluetooth": "{volume}% {icon}  {format_source}",
@@ -102,7 +102,6 @@
       "on-click": "pavucontrol",
       "scroll-step": 1
     },
-    "spacing": 2,
     "tray": {
       "spacing": 8
     },
