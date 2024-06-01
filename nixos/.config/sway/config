@@ -41,6 +41,10 @@ output $monitor-left {
         pos 0 0
 }
 
+# Window gaps
+#gaps inner 8
+#gaps outer 8
+
 exec swww-daemon
 exec swaync
 
@@ -127,7 +131,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 #bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
+bindsym $mod+w layout tabbed
 bindsym $mod+x layout toggle split
 
 # toggle tiling / floating
@@ -152,6 +156,9 @@ bindsym $mod+Shift+s move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+s scratchpad show
 
+# screenshots
+bindsym Print exec grim -g "$(slurp -d)" - | swappy -f -
+bindsym Shift+Print exec grim -g "$(slurp)" /home/sascha/Pictures/Screenshots/$(date +'%Y-%m-%d-%H-%M-%S_grim.png')
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -263,6 +270,10 @@ mode "resize" {
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
+        # change gaps
+        bindsym p gaps inner all plus 3
+        bindsym o gaps inner all minus 3
+
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -292,6 +303,8 @@ input "type:pointer" {
 # sway does not set DISPLAY/WAYLAND_DISPLAY in the systemd user environment
 # See FS#63021
 # Adapted from xorg's 50-systemd-user.sh, which achieves a similar goal.
+
+exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr -r
 
 # Upstream refuses to set XDG_CURRENT_DESKTOP so we have to.
 exec systemctl --user set-environment XDG_CURRENT_DESKTOP=sway
