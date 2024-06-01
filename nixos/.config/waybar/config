@@ -1,5 +1,22 @@
 [
   {
+	  "height": 35,
+    "modules-center": [
+      "sway/workspaces"
+    ],
+    "modules-left": [
+      "cpu",
+      "memory",
+      "pulseaudio",
+      "sway/window",
+      "sway/mode"
+    ],
+    "modules-right": [
+      "tray",
+      "custom/swaync",
+      "clock",
+      "custom/wlogout"
+    ],
     "clock": {
       "format": "{:%H:%M}",
       "interval": 1,
@@ -17,7 +34,7 @@
       "format": "",
       "on-click": "wlogout -c 5 -r 5 -p layer-shell"
     },
-    "height": 35,
+    
     "hyprland/workspaces": {
       "format": "{icon}",
       "format-icons": {
@@ -61,23 +78,7 @@
     "memory": {
       "format": "{}% "
     },
-    "modules-center": [
-      "hyprland/workspaces"
-    ],
-    "modules-left": [
-      "cpu",
-      "memory",
-      "pulseaudio",
-      "wlr/taskbar",
-      "hyprland/window"
-    ],
-    "modules-right": [
-      "tray",
-      "custom/swaync",
-      "clock",
-      "custom/wlogout"
-    ],
-    "position": "top",
+        "position": "top",
     "pulseaudio": {
       "format": "{volume}% {icon}  {format_source}",
       "format-bluetooth": "{volume}% {icon}  {format_source}",
