@@ -232,6 +232,10 @@ input "type:keyboard" {
 	xkb_layout de
 }
 
+input "type:pointer" {
+        accel_profile flat
+        pointer_accel 0.5
+}
 
 # sway does not set DISPLAY/WAYLAND_DISPLAY in the systemd user environment
 # See FS#63021
