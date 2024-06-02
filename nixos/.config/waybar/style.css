@@ -40,7 +40,7 @@ window#waybar {
     color: #000000;
     background: #f38ba8;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 13px;
     border-radius:8px;
     font-weight:bold;
 }
@@ -49,7 +49,7 @@ window#waybar {
     color: #000000;
     background: #f9e2af;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 13px;
     border-radius:8px;
 }
 
@@ -60,11 +60,21 @@ window#waybar {
 
 #workspaces button {
     color: #b4befe;
+    background:#313244;
 }
 
-#workspaces button.active, #workspaces button.focused {
+#workspaces button.active {
     color: #000000;
     background: #b4befe;
+}
+
+#workspaces button.focused {
+    color: #000000;
+    background: #b4befe;
+}
+
+#workspaces button.persistent {
+    background:none;
 }
 
 #cpu, #memory, #tray, #clock, #pulseaudio, #window {

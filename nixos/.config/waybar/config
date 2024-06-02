@@ -76,6 +76,27 @@
       "on-scroll-down": "hyprctl dispatch workspace e+1",
       "on-scroll-up": "hyprctl dispatch workspace e-1"
     },
+    "sway/workspaces": {
+	"persistent-workspaces": {
+		"1": ["DP-2"],
+		"2": ["DP-2"],
+		"3": ["DP-2"],
+		"4": ["DP-2"],
+		"5": ["DP-2"],
+		"6": ["DP-2"],
+		"7": ["DP-2"],
+		"8": ["DP-2"],
+		"9": ["DP-2"],
+		"F1": ["DP-3"],
+		"F2": ["DP-3"],
+		"F3": ["DP-3"],
+		"F4": ["DP-3"],
+		"F5": ["DP-1"],
+		"F6": ["DP-1"],
+		"F7": ["DP-1"],
+		"F8": ["DP-1"],
+	}
+    },
     "memory": {
       "format": "{}% "
     },
