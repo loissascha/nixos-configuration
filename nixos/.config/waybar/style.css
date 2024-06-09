@@ -81,3 +81,9 @@ window#waybar {
     padding: 0 10px;
     border-radius:8px;
 }
+
+#mode {
+    background: #eba0ac;
+    color: #000000;
+    border-radius:8px;
+}
