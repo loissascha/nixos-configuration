@@ -1,5 +1,5 @@
 window#waybar {
-    background-color: #1e1e2e;
+    background: rgba(30, 30, 46, 0.3);
 }
 
 #cpu {
@@ -56,6 +56,12 @@ window#waybar {
 #window {
     color: #cdd6f4;
     background: #313244;
+}
+
+#workspaces {
+    background-color: #1e1e2e;
+    padding: 0 10px;
+    border-radius:8px;
 }
 
 #workspaces button {
