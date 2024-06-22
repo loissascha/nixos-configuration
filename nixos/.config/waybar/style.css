@@ -1,5 +1,5 @@
 window#waybar {
-    background-color: #1e1e2e;
+    background: rgba(30, 30, 46, 0.3);
 }
 
 #cpu {
@@ -40,7 +40,7 @@ window#waybar {
     color: #000000;
     background: #f38ba8;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 13px;
     border-radius:8px;
     font-weight:bold;
 }
@@ -49,7 +49,7 @@ window#waybar {
     color: #000000;
     background: #f9e2af;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 13px;
     border-radius:8px;
 }
 
@@ -58,8 +58,15 @@ window#waybar {
     background: #313244;
 }
 
+#workspaces {
+    background-color: #1e1e2e;
+    padding: 0 10px;
+    border-radius:8px;
+}
+
 #workspaces button {
     color: #b4befe;
+    background:#313244;
 }
 
 #workspaces button.active {
@@ -67,7 +74,22 @@ window#waybar {
     background: #b4befe;
 }
 
+#workspaces button.focused {
+    color: #000000;
+    background: #b4befe;
+}
+
+#workspaces button.persistent {
+    background:none;
+}
+
 #cpu, #memory, #tray, #clock, #pulseaudio, #window {
     padding: 0 10px;
+    border-radius:8px;
+}
+
+#mode {
+    background: #eba0ac;
+    color: #000000;
     border-radius:8px;
 }
