@@ -155,7 +155,7 @@
     tldr
     w3m # terminal web browser
     unzip
-    gnome.zenity # zenity
+    zenity
     p7zip # 7z
     psmisc # stuff like killall
     mc # file manager
@@ -221,7 +221,7 @@
     
     
     #others
-    gnome.gnome-calculator
+    gnome-calculator
     #insync
     onedrive
     onedrivegui
