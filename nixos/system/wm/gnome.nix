@@ -3,7 +3,7 @@
 {
     services.xserver.desktopManager.gnome.enable = true;
 
-    environment.gnome.excludePackages = (with pkgs.gnome; [
+    environment.gnome.excludePackages = (with pkgs; [
 	    epiphany # gnome web browser
 	    geary # email reader
     ]);
@@ -12,7 +12,7 @@
         #gtk-engine-murrine
         #gtk_engines
         #gsettings-desktop-schemas
-        gnome.gnome-tweaks
+        gnome-tweaks
         #xfce.thunar
         #pcmanfm
         #cosmic-files 
