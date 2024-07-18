@@ -43,7 +43,7 @@ output $monitor-left {
 
 # Window gaps
 #gaps inner 8
-#gaps outer 8
+#gaps outer 4
 
 exec swww-daemon
 exec swaync
@@ -51,7 +51,7 @@ exec /usr/lib/polkit-kde-authentication-agent-1
 exec_always xrandr --output $monitor-middle --primary
 exec localectl set-x11-keymap us pc105 altgr-intl compose:menu,level3:ralt_switch
 
-exec /home/sascha/rust/randomWallpaper/target/release/randomWallpaper
+exec /home/sascha/rust/randomWallpaper/target/release/randomWallpaper /home/sascha/Pictures/randomWallpaper/
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
