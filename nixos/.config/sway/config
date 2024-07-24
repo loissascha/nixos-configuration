@@ -48,7 +48,7 @@ output $monitor-left {
 exec swww-daemon
 exec swaync
 exec /usr/lib/polkit-kde-authentication-agent-1
-exec_always xrandr --output $monitor-middle --primary
+exec_always sleep 30 && xrandr --output DP-2 --primary
 exec localectl set-x11-keymap us pc105 altgr-intl compose:menu,level3:ralt_switch
 
 exec /home/sascha/rust/randomWallpaper/target/release/randomWallpaper /home/sascha/Pictures/randomWallpaper/
